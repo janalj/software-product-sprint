@@ -16,6 +16,21 @@ body{
   
 }
 
+i{
+  font-size:30px;
+  margin:10px;
+}
+
+i:hover{
+ font-size:35px;
+  color: #fac23e;
+}
+
+#caption{
+  font-size: 25px;
+  color: #8ed2d3 ;
+}
+
 .BasicLayout{
   width: 60%;
   height: 300px;
@@ -30,6 +45,8 @@ body{
 /*   font-family: 'Roboto Condensed', sans-serif; */
   font-family: 'Orbitron', sans-serif;
 }
+
+
 
 #name{
 /*   background-color:blue; */
