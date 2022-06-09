@@ -15,22 +15,9 @@
 /**
  * Adds a random greeting to the page.
  */
-function addRandomGreeting() {
-  const greetings =
-      ['Hello world!', '¡Hola Mundo!', '你好，世界！', 'Bonjour le monde!'];
-
-  // Pick a random greeting.
-  const greeting = greetings[Math.floor(Math.random() * greetings.length)];
-
-  // Add it to the page.
-  const greetingContainer = document.getElementById('greeting-container');
-  greetingContainer.innerText = greeting;
-}
-
-// Play caption 
 
 const title = document.getElementById("caption");
-const text = "//Aspiring Software Engineer...";
+const text = "//Aspiring Software Engineer...      ";
 
 let index = 0;
 
@@ -47,7 +34,39 @@ const play = () => {
   }
 
   clearInterval(timer);
-  timer = setInterval(play, randomSpeed(70, 300));
+  timer = setInterval(play, randomSpeed(50, 300));
 };
 
 let timer = setInterval(play, 300);
+
+
+
+
+// function addRandomGreeting() {
+//   const greetings =
+//       ['Hello world!', '¡Hola Mundo!', '你好，世界！', 'Bonjour le monde!'];
+
+//   // Pick a random greeting.
+//   const greeting = greetings[Math.floor(Math.random() * greetings.length)];
+
+//   // Add it to the page.
+//   const greetingContainer = document.getElementById('greeting-container');
+//   greetingContainer.innerText = greeting;
+// }
+
+
+// Server Response "/hello"
+
+async function addRandomGreeting() {
+    let responseFromServer = await fetch('/hello');
+    if (responseFromServer.ok) {
+      let text = await responseFromServer.text();
+      const greetingContainer = document.getElementById('greeting-container');
+      greetingContainer.innerText = text;
+  
+    } else {
+      throw Error(responseFromServer.status);
+    }
+    // Add it to the page.
+  
+  }
