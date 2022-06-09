@@ -1,19 +1,86 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-  </head>
-  <body>
-    <div id="content">
-      <h1>My Portfolio</h1>
+
+<head>
+  <meta charset="UTF-8">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+  <script defer src="https://kit.fontawesome.com/81f015fcff.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="content">
+    <div id="name" class="BasicLayout">
+      <div>
+        <div> Hi, I'm Luying Jiang</div>
+        <div id="caption" class="caption">//Aspiring Software Engineer...</div>
+        <div>
+          <i onclick="window.open('https://www.linkedin.com/in/luying-jiang-295b6a95/','popup','width=800,height=800');"
+            class="icon fa-brands fa-linkedin"></i>
+
+          <i onclick="window.open('https://github.com/janalj/','popup','width=800,height=800');"
+            class="icon fa-brands fa-github-square"></i>
+          <i onclick="window.open('mailto:janalj1031@gmail.com','width=800,height=800');"
+            class="icon fa-solid fa-envelope"></i>
+        </div>
+
+      </div>
+    </div>
+    <div id = "greetingbox" class="BasicLayout">
+      <h1>Hello</h1>
       <p>This is my portfolio.</p>
       <p>Click <a href="/hello">here</a> to see content created by server code.</p>
       <p>Click here to get a random message:</p>
       <button onclick="addRandomGreeting()">Hello</button>
       <div id="greeting-container"></div>
     </div>
-  </body>
+    <div id="projects" class="BasicLayout">
+
+      <div id="projectTitle">Project</div>
+      <div id="imageList">
+        <img class="img"
+          src="https://image.cnbcfm.com/api/v1/image/105992231-1561667465295gettyimages-521697453.jpeg?v=1561667497&w=740&h=416&ffmt=webp"
+          alt="Your image url" width="300" height="200">
+        <img class="img"
+          src="https://img.etimg.com/thumb/msid-72951938,width-650,imgsize-579705,,resizemode-4,quality-100/the-owners-can-also-make-a-few-changes-like-increasing-or-decreasing-a-specific-substance-it-is-better-to-minimise-treats-during-this-season-as-it-contributes-to-the-weight-.jpg"
+          alt="Your image url" width="300" height="200">
+        <img class="img" src="https://www.cdc.gov/healthypets/images/pets/cute-dog-headshot.jpg?_=42445"
+          alt="Your image url" width="300" height="200">
+
+      </div>
+
+
+    </div>
+
+
+    <div id="aboutme" class="BasicLayout">
+      <div id="aboutmeTitle">About Me </div>
+
+      <p id="aboutMeText">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+        laudantium, totam rem
+        aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo
+        enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
+        qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+        consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam
+        quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+        nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse
+        quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+
+    </div>
+
+
+
+
+    <form method="POST">
+      <p>Enter some text here:</p>
+      <textarea name="text-input">hello world</textarea>
+      <br />
+
+      <input onclick="showServerTime();" type="submit" />
+
+    </form>
+  </div>
+</body>
+
 </html>
