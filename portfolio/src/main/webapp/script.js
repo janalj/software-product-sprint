@@ -40,38 +40,22 @@ const play = () => {
 let timer = setInterval(play, 300);
 
 
-
-
-// function addRandomGreeting() {
-//   const greetings =
-//       ['Hello world!', '¡Hola Mundo!', '你好，世界！', 'Bonjour le monde!'];
-
-//   // Pick a random greeting.
-//   const greeting = greetings[Math.floor(Math.random() * greetings.length)];
-
-//   // Add it to the page.
-//   const greetingContainer = document.getElementById('greeting-container');
-//   greetingContainer.innerText = greeting;
-// }
-
-
 // Server Response "/hello"
-
 async function addRandomGreeting() {
+    
+    // send get request 
     let responseFromServer = await fetch('/hello');
     if (responseFromServer.ok) {
-      //let text = await responseFromServer.text();
-      let jsontext = await  responseFromServer.json();
-    //   console.log("text", text);
-    //   console.log(typeof (text));
 
-      console.log("jsontext", jsontext);
+      // pick a greeting randomly
+      const JsonArray = await  responseFromServer.json();
+      const greeting = JsonArray[Math.floor(Math.random() * JsonArray.length)];
+      
+      // Add it to the page.
       const greetingContainer = document.getElementById('greeting-container');
-      greetingContainer.innerText = jsontext;
-  
+      greetingContainer.innerText = greeting;
     } else {
       throw Error(responseFromServer.status);
     }
-    // Add it to the page.
   
   }
