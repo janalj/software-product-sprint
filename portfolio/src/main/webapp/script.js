@@ -59,3 +59,13 @@ async function addRandomGreeting() {
     }
   
   }
+
+
+  // Submit Button
+  async function submitText() {
+    const responseFromServer = await fetch('/form-handler');
+    const textFromResponse = await responseFromServer.text();
+    console.log("textFromResponse:", textFromResponse);
+    
+  }
+  
