@@ -16,8 +16,16 @@ public class HelloWorldServlet extends HttpServlet {
   public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
      //Create a Greeting Object
     Greeting greeting = new Greeting( "a","b","c");
-    Gson gson = new Gson();
-    String json = gson.toJson(greeting);
+
+    ArrayList<String> mylist = new ArrayList<String> ();
+    mylist.add("abc");
+    mylist.add("cfd");
+    mylist.add("ert");
+    mylist.add("fg");
+    mylist.add("ujk");
+    String json = new Gson().toJson(mylist);
+    //Gson gson = new Gson();
+    //String json = gson.toJson(greeting);
 
     // Send the JSON as the response
     response.setContentType("application/json;");
