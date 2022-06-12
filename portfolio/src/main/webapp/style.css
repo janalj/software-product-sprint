@@ -109,6 +109,13 @@ i:hover{
   flex-direction: column;
 }
 
+#contactMe{
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+
 @media only screen and (max-width: 500px){
 	/*Big smartphones [426px -> 600px]*/
   .BasicLayout{

@@ -60,12 +60,32 @@ async function addRandomGreeting() {
   
   }
 
-
-  // Submit Button
-  async function submitText() {
-    const responseFromServer = await fetch('/form-handler');
-    const textFromResponse = await responseFromServer.text();
-    console.log("textFromResponse:", textFromResponse);
-    
-  }
+   
+  let inputText = document.getElementById("inputValue").value;
   
+  console.log("inputValue",inputValue);
+
+
+//   // Submit Button
+//   async function submitText() {
+//     const responseFromServer = await sendPostRequest("/form-handler",inputText);
+//     // const textFromResponse = await responseFromServer.text();
+//     console.log("textFromResponse:", responseFromServer);
+    
+//   }
+  
+//   async function sendPostRequest(url,data) {
+//     params = {
+//       method: 'POST', 
+//       headers: {'Content-Type': 'application/text'},
+//       body: data };
+//       console.log("about to send post request");
+//       console.log(data);
+//     let response = await fetch(url,params);
+//     if (response.ok) {
+//       let data = await response.text();
+//       return data;
+//     } else {
+//       throw Error(response.status);
+//     }
+//   }
