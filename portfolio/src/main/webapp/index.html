@@ -32,7 +32,7 @@
       <p>This is my portfolio.</p>
       <p>Click <a href="/hello">here</a> to see content created by server code.</p>
       <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
+      <button class = "buttons" onclick="addRandomGreeting()">Hello</button>
       <div id="greeting-container"></div>
     </div>
     <div id="projects" class="BasicLayout">
@@ -75,19 +75,19 @@
         <form action = "/form-handler" method="POST">
 
         <label>Your Name</label>
-        <input type="text" id="yourName">
+        <input class="inputBox" type="text" id="yourName">
 
     
         <label>Email</label>
-        <input type="text" id="email">
+        <input class="inputBox" type="text" id="email">
   
         <label>Message</label>
-        <textarea name="text-input" placeholder="Enter here" id = "inputValue" ></textarea>
+        <textarea class="inputBox" name="text-input" placeholder="Enter here" id = "inputValue" ></textarea>
 
 
         <br />
         <div>
-            <input  type="submit" />
+            <input  class = "buttons" type="submit" />
         </div>
 
         </form>
