@@ -105,10 +105,15 @@ i:hover{
   flex-direction: column;
 }
 
+#greeting-container{
+    margin: 10px;
+    color: #fac23e;
+}
+
 #contactMe{
     display: flex;
     flex-direction: column;
-    height: 360px;
+    height: 480px;
     
   }
 .sessionTitle{
