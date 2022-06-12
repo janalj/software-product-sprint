@@ -3,6 +3,10 @@ font-family: 'Roboto Condensed', sans-serif;
 */
 @import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Inter:wght@400;600&family=Orbitron:wght@400;500;600;700&family=Roboto+Condensed:wght@400;700&display=swap');
 
+/* Font style for the entire page */
+*{
+    font-family: 'Orbitron', sans-serif;
+}
 
 body{
   background-color:  #173a52;
@@ -124,7 +128,6 @@ label{
 
 .inputBox{
     color: #436073;
-    font-family: 'Orbitron', sans-serif;
     font-size:16px;
     border: 1px solid #436073;
     padding: 5px;
@@ -138,10 +141,19 @@ textarea{
 .buttons{
     background-color: #8ed2d3;
     color: white;
-    border-radius: 3;
+    border: 1px;
+    font-size:20px;
+    text-align: center;
+    align-items:center;
+    color:white;
+    padding: 9px 52px;
+    border-radius: 50px;
 }
 
-
+.buttons:hover{
+    background-color: white;
+    color: #173a52;
+}
 
 @media only screen and (max-width: 500px){
 	/*Big smartphones [426px -> 600px]*/
