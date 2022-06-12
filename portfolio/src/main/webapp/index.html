@@ -37,7 +37,7 @@
     </div>
     <div id="projects" class="BasicLayout">
 
-      <div id="projectTitle">Project</div>
+      <div class = "sessionTitle">Project</div>
       <div id="imageList">
         <img class="img"
           src="https://image.cnbcfm.com/api/v1/image/105992231-1561667465295gettyimages-521697453.jpeg?v=1561667497&w=740&h=416&ffmt=webp"
@@ -55,7 +55,7 @@
 
 
     <div id="aboutme" class="BasicLayout">
-      <div id="aboutmeTitle">About Me </div>
+      <div class = "sessionTitle">About Me </div>
 
       <p id="aboutMeText">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
         laudantium, totam rem
@@ -70,16 +70,28 @@
     </div>
 
     <!-- form  -->
-    <div class="BasicLayout">
+    <div id = "contactMe" class="BasicLayout">
+        <div class = "sessionTitle" >Contact Me</div>
         <form action = "/form-handler" method="POST">
-      <p>Enter some text here:</p>
-      <textarea name="text-input"  id = "inputValue">hello world</textarea>
-      <br />
 
-      <input  type="submit" />
+        <label>Your Name</label>
+        <input type="text" id="yourName">
 
-    </form>
-</div>
+    
+        <label>Email</label>
+        <input type="text" id="email">
+  
+        <label>Message</label>
+        <textarea name="text-input" placeholder="Enter here" id = "inputValue" ></textarea>
+
+
+        <br />
+        <div>
+            <input  type="submit" />
+        </div>
+
+        </form>
+    </div>
   </div>
 </body>
 

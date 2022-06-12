@@ -63,7 +63,7 @@ async function addRandomGreeting() {
    
   let inputText = document.getElementById("inputValue").value;
   
-  console.log("inputValue",inputValue);
+  console.log("inputValue: ",inputValue);
 
 
 //   // Submit Button

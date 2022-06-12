@@ -67,10 +67,7 @@ i:hover{
   height: 500px;
   flex-direction: column;
 }
-#aboutmeTitle{
-  font-size: 30px;
-  
-}
+
 
 #aboutMeText{
   margin:30px;
@@ -83,11 +80,6 @@ i:hover{
   height:300px;
 }
 
- #projectTitle{
-  font-size: 30px;
-  margin:40px;
-  
-}
 
 .img {
   margin: 20px;
@@ -112,8 +104,22 @@ i:hover{
 #contactMe{
     display: flex;
     flex-direction: column;
+    height: 360px;
     
   }
+.sessionTitle{
+    font-size: 30px;
+    margin: 40px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+label{
+    margin: 5px;
+}
 
 
 @media only screen and (max-width: 500px){
