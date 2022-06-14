@@ -93,7 +93,7 @@ height: 54px;
 .projectsContainer{
     display: flex;
     justify-content: space-between;
-    height: 520px;
+    height: 600px;
     border: #173a52;
     
 }
@@ -130,6 +130,7 @@ height: 54px;
 
 img{
     box-shadow: rgba(142, 210, 211, 0.4) 5px 5px, rgba(142, 210, 211, 0.3) 10px 10px, rgba(142, 210, 211, 0.2) 15px 15px, rgba(142, 210, 211, 0.1) 20px 20px, rgba(142, 210, 211, 0.05) 25px 25px;
+    margin-bottom: 15px;
 }
 
 img:hover{
@@ -137,7 +138,12 @@ img:hover{
     transition: all 100ms ease-in-out;
     
 }
-
+#project1Code{
+    margin-top: 30px;
+}
+#project2Code{
+    margin-top: 30px;
+}
 #greetingbox{
   display: flex;
   flex-direction: column;
