@@ -27,8 +27,9 @@ i{
 }
 
 i:hover{
- font-size:35px;
+  font-size:35px;
   color: #fac23e;
+  transition: all 100ms ease-in-out;
 }
 
 #caption{
@@ -95,7 +96,7 @@ height: 100px;
 }
 
 .projectbox{
-    width: 100%;
+    width: 47%;
     height: 100%;
     border: 4px solid #8ed2d3 ;
     display: flex;
@@ -107,9 +108,6 @@ height: 100px;
     
 }
 
-.projectbox:hover{
-    transform: scale(1.05);
-}
 
 
 .img {
@@ -125,6 +123,16 @@ height: 100px;
 #imageList{
   display:flex;
   
+}
+
+img{
+    box-shadow: rgba(142, 210, 211, 0.4) 5px 5px, rgba(142, 210, 211, 0.3) 10px 10px, rgba(142, 210, 211, 0.2) 15px 15px, rgba(142, 210, 211, 0.1) 20px 20px, rgba(142, 210, 211, 0.05) 25px 25px;
+}
+
+img:hover{
+    transform: scale(1.1);
+    transition: all 100ms ease-in-out;
+    
 }
 
 #greetingbox{
