@@ -12,14 +12,21 @@ public class FormHandlerServlet extends HttpServlet {
   @Override
   public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
 
-    // Get the value entered in the form.
+    // Get t3he value entered in the form.
     String textValue = request.getParameter("text-input");
+    // get name 
+    String name = request.getParameter("Name");
+
+    // get email 
+
+    String email = request.getParameter("Email");
+
     //String textValue = request.getParameter("data");
     // Print the value so you can see it in the server logs.
-    System.out.println("You submitted: " + textValue);
+    System.out.println("Name: " +name + "Email: " + email +"You submitted: " + textValue);
 
     // Write the value to the response so the user can see it.
-    response.getWriter().println("You submitted: " + textValue);
+    response.getWriter().println("Name: " +name + "Email: " + email +"You submitted: " + textValue);
     response.sendRedirect("/index.html");
   }
 }

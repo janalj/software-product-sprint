@@ -103,6 +103,7 @@ i:hover{
 #greetingbox{
   display: flex;
   flex-direction: column;
+  height: 270px;
 }
 
 #greeting-container{
@@ -123,7 +124,7 @@ i:hover{
 form{
     display: flex;
     flex-direction: column;
-    width: 300px;
+    width: 360px;
 }
 
 label{
@@ -151,7 +152,7 @@ textarea{
     text-align: center;
     align-items:center;
     color:white;
-    padding: 9px 52px;
+    padding: 3px 28px;
     border-radius: 50px;
 }
 
