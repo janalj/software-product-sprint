@@ -85,6 +85,22 @@ i:hover{
 }
 
 
+.projectsContainer{
+    display: flex;
+    justify-content: space-between;
+    height: 520px;
+    border: #173a52;
+    
+}
+
+.projectbox{
+    width: 46%;
+    height: 100%;
+    border: 4px solid #8ed2d3 ;
+
+}
+
+
 .img {
   margin: 20px;
   transform: skewY(-35deg);
