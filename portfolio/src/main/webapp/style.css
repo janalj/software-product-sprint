@@ -20,6 +20,13 @@ body{
   
 }
 
+p{
+    margin: 15px;
+}
+
+#otherProject{
+    justify-content: center;
+}
 i{
   font-size:30px;
   margin:10px;
@@ -84,7 +91,7 @@ i:hover{
 }
 #projects{
 /*   background-color:yellow; */
-height: 54px;
+height: 75px;
  flex-direction: column;
 
 }
