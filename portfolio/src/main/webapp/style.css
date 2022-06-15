@@ -202,6 +202,11 @@ textarea{
   width: 200%;
   }
 
+  .projectsContainer{
+    flex-direction: column;
+  }
+
+
   #name{
     font-size:40px;
   }
