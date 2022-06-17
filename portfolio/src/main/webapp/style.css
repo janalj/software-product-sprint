@@ -203,7 +203,9 @@ textarea{
   }
 
   .projectsContainer{
-    flex-direction: column;
+    flex-direction: row;
+    width:300%;
+    flex-wrap: wrap;
   }
 
 
