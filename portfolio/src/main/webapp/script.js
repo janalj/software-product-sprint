@@ -40,33 +40,52 @@ const play = () => {
 let timer = setInterval(play, 300);
 
 
-
-
-// function addRandomGreeting() {
-//   const greetings =
-//       ['Hello world!', '¡Hola Mundo!', '你好，世界！', 'Bonjour le monde!'];
-
-//   // Pick a random greeting.
-//   const greeting = greetings[Math.floor(Math.random() * greetings.length)];
-
-//   // Add it to the page.
-//   const greetingContainer = document.getElementById('greeting-container');
-//   greetingContainer.innerText = greeting;
-// }
-
-
 // Server Response "/hello"
-
 async function addRandomGreeting() {
+    
+    // send get request 
     let responseFromServer = await fetch('/hello');
     if (responseFromServer.ok) {
-      let text = await responseFromServer.text();
+
+      // pick a greeting randomly
+      const JsonArray = await  responseFromServer.json();
+      const greeting = JsonArray[Math.floor(Math.random() * JsonArray.length)];
+      
+      // Add it to the page.
       const greetingContainer = document.getElementById('greeting-container');
-      greetingContainer.innerText = text;
-  
+      greetingContainer.innerText = greeting;
     } else {
       throw Error(responseFromServer.status);
     }
-    // Add it to the page.
   
   }
+
+   
+  let inputText = document.getElementById("inputValue").value;
+  
+  console.log("inputValue: ",inputValue);
+
+
+//   // Submit Button
+//   async function submitText() {
+//     const responseFromServer = await sendPostRequest("/form-handler",inputText);
+//     // const textFromResponse = await responseFromServer.text();
+//     console.log("textFromResponse:", responseFromServer);
+    
+//   }
+  
+//   async function sendPostRequest(url,data) {
+//     params = {
+//       method: 'POST', 
+//       headers: {'Content-Type': 'application/text'},
+//       body: data };
+//       console.log("about to send post request");
+//       console.log(data);
+//     let response = await fetch(url,params);
+//     if (response.ok) {
+//       let data = await response.text();
+//       return data;
+//     } else {
+//       throw Error(response.status);
+//     }
+//   }
