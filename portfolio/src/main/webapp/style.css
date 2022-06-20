@@ -9,7 +9,11 @@ font-family: 'Roboto Condensed', sans-serif;
 }
 
 body{
-  background-color:  #173a52;
+  /* background-color:  #173a52; */
+    background-image: url(https://miro.medium.com/max/1080/1*VFYWXlag5Sxqgpq7EHJ7CA.gif);
+    background-attachment:fixed;
+    background-size: cover;
+  
 }
 .content {
   display: flex; 
