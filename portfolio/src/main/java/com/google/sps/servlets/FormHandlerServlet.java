@@ -22,7 +22,7 @@ public class FormHandlerServlet extends HttpServlet {
   @Override
   public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
 
-    // Get t3he value entered in the form.
+    // Get the value entered in the form.
     String textValue = request.getParameter("text-input");
     // get name 
     String name = request.getParameter("Name");

@@ -17,8 +17,8 @@ public class HelloWorldServlet extends HttpServlet {
      //Create a Greeting arraylist
     ArrayList<String> mylist = new ArrayList<String> ();
     mylist.add("I like Boba.");
-    mylist.add("I play Fornite.");
-    mylist.add("I play League of Legend.");
+    mylist.add("I play Fortnite.");
+    mylist.add("I play League of Legends.");
     mylist.add("My favorite Movie is Your Name.");
     mylist.add("I like programming.");
     //Convert array list to json 
